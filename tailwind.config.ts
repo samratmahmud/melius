@@ -1,20 +1,68 @@
-import type { Config } from "tailwindcss";
+import type {Config} from "tailwindcss";
+import {fontFamily} from "tailwindcss/defaultTheme";
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+   content: [
+      "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+      "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+      "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+   ],
+   theme: {
+      extend: {
+         colors: {
+            gray: {
+               "50": "#ffffff",
+               "400": "#A3AED0",
+               "500": "#8F9BBA",
+               "600": "#707EAE",
+               "800": "#333333",
+               "950": "#060606",
+            },
+            amber: {"300": "#EFC252"},
+            teal: {"500": "#05CD99"},
+            cyan: {"900": "#2B3674"},
+            indigo: {"300": "#B0BBD5", "500": "#8050F2", "950": "#1B2559"},
+         },
       },
-    },
-  },
-  plugins: [],
+      fontSize: {
+         xs: ["8px", {lineHeight: "1.28em"}],
+         sm: ["10px", {lineHeight: "1.01em"}],
+         md: ["11px", {lineHeight: "1.44em"}],
+         base: ["12px", {lineHeight: "1.13em"}],
+         lg: ["14px", {lineHeight: "1.43em"}],
+         xl: ["16px", {lineHeight: "1.38em", letterSpacing: "0.02em"}],
+         "2xl": ["18px", {lineHeight: "1.11em", letterSpacing: "0.02em"}],
+         "3xl": ["20px", {lineHeight: "1.1em"}],
+         "4xl": ["24px", {lineHeight: "1.08em"}],
+         "5xl": ["26px", {lineHeight: "1.19em"}],
+         "6xl": ["28px", {lineHeight: "1.11em", letterSpacing: "0.02em"}],
+         "7xl": ["30px", {lineHeight: "1.2em"}],
+         "8xl": ["32px", {lineHeight: "1.09em"}],
+         "9xl": ["40px", {lineHeight: "1.1em"}],
+         "10xl": ["50px", {lineHeight: "1.2em"}],
+         "11xl": ["60px", {lineHeight: "1.1em"}],
+         "12xl": ["64px", {lineHeight: "1.2em"}],
+         "13xl": ["84px", {lineHeight: "1.1em"}],
+         "14xl": ["120px", {lineHeight: "1.1em"}],
+      },
+      shadows: {
+         sm: "2px 2px 2px",
+         md: "0px 3px 5px rgba(67, 24, 255, 0.25)",
+         lg: "3px 4px 9px 1px rgba(112, 144, 176, 0.08)",
+         xl: "0px 5px 9px rgba(67, 24, 255, 0.25)",
+         "2xl": "0px 5px 12px 1px rgba(30, 30, 47, 0.07)",
+      },
+      fontFamily: {
+         "tt-hoves": ["'TT Hoves'", ...fontFamily.sans],
+         "code-pro-lc": ["'Code Pro LC'", ...fontFamily.sans],
+         "futura-lt": ["'Futura LT'", ...fontFamily.sans],
+         "codec-pro": ["'Codec Pro'", ...fontFamily.sans],
+         "dm-sans": ["var(--font-dm-sans)", ...fontFamily.sans],
+         "grape-nuts": ["var(--font-grape-nuts)", ...fontFamily.sans],
+         "inter-tight": ["var(--font-inter-tight)", ...fontFamily.sans],
+      },
+      backgroundImage: {},
+   },
+   plugins: [],
 };
 export default config;
