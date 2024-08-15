@@ -8,7 +8,7 @@ interface LayoutProps {
 
 function Layout({children}: LayoutProps) {
    return (
-      <div>
+      <div className="bg-gray-950">
          <Navbar />
          {children}
          {/* <Footer /> */}

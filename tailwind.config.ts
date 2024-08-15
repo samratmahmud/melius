@@ -21,7 +21,7 @@ const config: Config = {
             amber: {"300": "#EFC252"},
             teal: {"500": "#05CD99"},
             cyan: {"900": "#2B3674"},
-            indigo: {"300": "#B0BBD5", "500": "#8050F2", "950": "#1B2559"},
+            primary: {"300": "#B0BBD5", "500": "#8050F2", "950": "#1B2559"},
          },
       },
       fontSize: {
@@ -30,7 +30,7 @@ const config: Config = {
          md: ["11px", {lineHeight: "1.44em"}],
          base: ["12px", {lineHeight: "1.13em"}],
          lg: ["14px", {lineHeight: "1.43em"}],
-         xl: ["16px", {lineHeight: "1.38em", letterSpacing: "0.02em"}],
+         xl: ["16px", {lineHeight: "1.38em"}],
          "2xl": ["18px", {lineHeight: "1.11em", letterSpacing: "0.02em"}],
          "3xl": ["20px", {lineHeight: "1.1em"}],
          "4xl": ["24px", {lineHeight: "1.08em"}],
@@ -62,6 +62,21 @@ const config: Config = {
          "inter-tight": ["var(--font-inter-tight)", ...fontFamily.sans],
       },
       backgroundImage: {},
+      container: {
+         center: true,
+         padding: {
+            DEFAULT: "1rem",
+            md: "2rem",
+            lg: "3rem",
+            xl: "4rem",
+         },
+      },
+      screens: {
+         sm: "600px",
+         md: "768px",
+         lg: "992px",
+         xl: "1280px",
+      },
    },
    plugins: [],
 };

@@ -2,6 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import url("../components/common/Button/button.css");
+@import url("../assets/fonts/TT-Hoves-Pro/style.css");
+@import url("../assets/fonts/futura-lt-cdnfonts/style.css");
+
 * {
    @apply p-0 m-0 box-border;
 }
@@ -11,7 +15,7 @@ html {
 }
 
 body {
-   @apply p-0 m-0;
+   @apply font-dm-sans text-xl text-white font-normal;
 }
 
 @layer components {

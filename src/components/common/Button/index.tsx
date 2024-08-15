@@ -7,7 +7,7 @@ type ButtonTagProps = {} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 type CombainElementProps = LinkTagProps | ButtonTagProps;
 type ButtonProps = CombainElementProps & {
    size?: "small" | "normal" | "large" | "xl-large";
-   color?: "primary" | "secondary";
+   color?: "primary" | "secondary" | "gray";
    variant?: "contained" | "outlined" | "text";
    component?: React.ElementType;
 };
