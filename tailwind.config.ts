@@ -18,7 +18,7 @@ const config: Config = {
                "800": "#333333",
                "950": "#060606",
             },
-            amber: {"300": "#EFC252"},
+            amber: {"300": "#EFC252", "400": "#52A0EF"},
             teal: {"500": "#05CD99"},
             cyan: {"900": "#2B3674"},
             primary: {"300": "#B0BBD5", "500": "#8050F2", "950": "#1B2559"},
@@ -42,7 +42,7 @@ const config: Config = {
          "10xl": ["50px", {lineHeight: "1.2em"}],
          "11xl": ["60px", {lineHeight: "1.1em"}],
          "12xl": ["64px", {lineHeight: "1.2em"}],
-         "13xl": ["84px", {lineHeight: "1.1em"}],
+         "13xl": ["84px", {lineHeight: "1.07em"}],
          "14xl": ["120px", {lineHeight: "1.1em"}],
       },
       shadows: {
@@ -61,7 +61,12 @@ const config: Config = {
          "grape-nuts": ["var(--font-grape-nuts)", ...fontFamily.sans],
          "inter-tight": ["var(--font-inter-tight)", ...fontFamily.sans],
       },
-      backgroundImage: {},
+      backgroundImage: {
+         "header-bg": "linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0) 100%)",
+         "black-primary":
+            "linear-gradient(266deg, rgba(128, 80, 242, 0.30) 0%, rgba(24.10, 0, 81.34, 0.30) 100%)",
+         "amber-primary": "linear-gradient(166deg, #CBB5FF 0%, #8050F2 100%)",
+      },
       container: {
          center: true,
          padding: {
