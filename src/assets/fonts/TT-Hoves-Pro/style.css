@@ -4,3 +4,21 @@
    font-weight: 400;
    font-style: normal;
 }
+@font-face {
+   src: url("./TT-Hoves-Pro-Trial-Medium.ttf");
+   font-family: "TT Hoves Pro Trial";
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+   src: url("./TT-Hoves-Pro-Trial-DemiBold.ttf");
+   font-family: "TT Hoves Pro Trial";
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   src: url("./TT-Hoves-Pro-Trial-Bold.ttf");
+   font-family: "TT Hoves Pro Trial";
+   font-weight: 700;
+   font-style: normal;
+}

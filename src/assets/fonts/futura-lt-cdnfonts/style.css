@@ -4,3 +4,9 @@
    font-weight: 400;
    font-style: normal;
 }
+@font-face {
+   src: url("./FuturaLT-Heavy.ttf");
+   font-family: "Futura LT";
+   font-weight: 500;
+   font-style: normal;
+}

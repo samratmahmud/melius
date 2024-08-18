@@ -11,7 +11,7 @@ function Layout({children}: LayoutProps) {
       <div className="bg-gray-950">
          <Navbar />
          {children}
-         {/* <Footer /> */}
+         <Footer />
       </div>
    );
 }

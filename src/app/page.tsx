@@ -2,7 +2,8 @@ import React from "react";
 import Header from "./home/Header";
 import Support from "./home/Support";
 import Dashboard from "./home/Dashboard";
-import Pricing from "./home/Pricing";
+import Pricing from "./home/Pricing/Pricing";
+import Datepicker from "./home/Datepicker";
 
 function page() {
    return (
@@ -11,6 +12,7 @@ function page() {
          <Support />
          <Dashboard />
          <Pricing />
+         <Datepicker />
       </main>
    );
 }
