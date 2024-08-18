@@ -51,8 +51,9 @@ const packages = [
       ],
    },
    {
-      name: "Basic",
-      price: "free",
+      name: "Enterprise",
+      price: "$49",
+      date: "per month",
       describtion:
          "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum",
       features: [

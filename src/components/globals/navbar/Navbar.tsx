@@ -14,7 +14,7 @@ const navLink = [
    },
    {
       name: "About Us",
-      href: "/",
+      href: "/about-us",
    },
 ];
 
@@ -31,7 +31,7 @@ function Navbar() {
                      <Link
                         key={index}
                         href={href}
-                        className=" text-2xl hover:no-underline px-2.5 py-2"
+                        className=" text-2xl hover:no-underline hover:text-primary-500 duration-300 px-2.5 py-2"
                      >
                         {name}
                      </Link>

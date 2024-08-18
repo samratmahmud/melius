@@ -9,7 +9,7 @@
    @apply font-bold leading-[1em] p-3 min-h-[42px] min-w-[166px];
 }
 .button-wrapper-normal {
-   @apply font-bold py-4 px-8 leading-[1em] min-h-[52px] min-w-[264px];
+   @apply font-bold font-tt-hoves py-4 px-8 leading-[1em] min-h-[52px] min-w-[264px];
 }
 .button-wrapper-large {
    @apply font-bold leading-[1em] py-6 px-10 min-h-[68px] min-w-[264px];

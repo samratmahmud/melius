@@ -89,9 +89,9 @@ function Footer() {
                      Get in touch
                   </h6>
                   <div className="flex flex-col gap-3">
-                     <TextField placeholder="Name" />
-                     <TextField placeholder="Last Name" />
-                     <TextField placeholder="Email" />
+                     <TextField placeholder="Name" type="text" />
+                     <TextField placeholder="Last Name" type="text" />
+                     <TextField placeholder="Email" type="email" />
                   </div>
                </div>
                <div className="flex flex-col gap-3 mt-14">
