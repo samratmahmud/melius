@@ -1,4 +1,10 @@
 @font-face {
+   src: url("./FuturaLT-Light.ttf");
+   font-family: "Futura LT";
+   font-weight: 300;
+   font-style: normal;
+}
+@font-face {
    src: url("./FuturaLT.ttf");
    font-family: "Futura LT";
    font-weight: 400;

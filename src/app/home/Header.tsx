@@ -8,7 +8,12 @@ function Header() {
          <div className="container">
             <div className="relative">
                <div className="flex justify-end relative z-0">
-                  <Image width={700} height={790} src="/images/header-thumbnail.png" alt="" />
+                  <Image
+                     width={700}
+                     height={790}
+                     src="/images/header-thumbnail.png"
+                     alt=""
+                  />
                   <div className="bg-header-bg absolute inset-0" />
                </div>
                <div className="absolute top-[135px] z-10">
@@ -22,12 +27,14 @@ function Header() {
                   <div className="flex justify-center gap-7">
                      <Button
                         size="large"
+                        variant="outlined"
                         className="bg-black-primary bg-transparent header-button-blur"
                      >
                         Start Transformation
                      </Button>
                      <Button
                         size="large"
+                        variant="outlined"
                         className="bg-black-primary bg-transparent header-button-blur"
                      >
                         Book Consulting Hours

@@ -1,7 +1,7 @@
 @tailwind components;
 
 .button-wrapper {
-   @apply flex items-center justify-center gap-4 rounded-full box-border duration-300 focus:ring-[3px] hover:no-underline;
+   @apply flex items-center justify-center gap-4 rounded-full box-border duration-300 focus:ring-[3px] hover:no-underline outline-none;
 }
 
 /* Sizes */
@@ -22,7 +22,7 @@
    @apply bg-primary-500 text-white border border-primary-500 hover:bg-transparent hover:text-primary-500 ring-primary-500/60;
 }
 .button-wrapper-primary-outlined {
-   /* @apply bg-transparent text-accent border border-accent hover:text-white group-hover:text-white hover:bg-accent group-hover:bg-accent ring-accent/40; */
+   @apply bg-transparent text-white border border-primary-500 hover:bg-primary-500 focus:bg-amber-800 ring-primary-500/40;
 }
 .button-wrapper-primary-text {
 }

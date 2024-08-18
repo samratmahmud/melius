@@ -5,6 +5,8 @@ import {GrInstagram} from "react-icons/gr";
 import {FaFacebookF} from "react-icons/fa6";
 import {FaLinkedinIn} from "react-icons/fa";
 import TextField from "@/components/common/TextField";
+import TextArea from "@/components/common/Textarea";
+import Button from "@/components/common/Button";
 
 const mediaLinks = [
    {
@@ -83,10 +85,23 @@ function Footer() {
                   ))}
                </div>
                <div>
-                  <h6 className="text-4xl font-medium font-tt-hoves">
+                  <h6 className="text-4xl font-medium font-tt-hoves mb-7">
                      Get in touch
                   </h6>
-                  <TextField placeholder="Name" />
+                  <div className="flex flex-col gap-3">
+                     <TextField placeholder="Name" />
+                     <TextField placeholder="Last Name" />
+                     <TextField placeholder="Email" />
+                  </div>
+               </div>
+               <div className="flex flex-col gap-3 mt-14">
+                  <TextArea placeholder="Message" />
+                  <Button
+                     variant="outlined"
+                     className="bg-black-primary bg-transparent header-button-blur"
+                  >
+                     Send message
+                  </Button>
                </div>
             </div>
          </div>

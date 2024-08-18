@@ -13,7 +13,7 @@ function TextArea(props: TextAreaProps) {
          {label && <b className="text-dark leading-[1.6em] mb-3">{label}</b>}
          <textarea
             {...rest}
-            className={`w-full bg-transparent px-6 py-3 text-content-text placeholder:text-content-text bg-white rounded overflow-hidden border border-[#E7E6E6] group hover:border-accent focus:ring-1 ring-accent ${className}}`}
+            className={`w-full min-h-[116px] bg-transparent px-5 py-3.5 text-lg font-light font-futura-lt placeholder:text-white rounded-3xl border border-white/50 hover:border-primary-500/60 duration-300 outline-none focus:ring-2 ring-primary-500/40 ${className}`}
          />
       </label>
    );

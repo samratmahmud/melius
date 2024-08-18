@@ -18,7 +18,7 @@ const config: Config = {
                "800": "#333333",
                "950": "#060606",
             },
-            amber: {"300": "#EFC252", "400": "#52A0EF"},
+            amber: {"300": "#EFC252", "400": "#52A0EF", "800": "#5C3CA8"},
             teal: {"500": "#05CD99"},
             cyan: {"900": "#2B3674"},
             primary: {"300": "#B0BBD5", "500": "#8050F2", "950": "#1B2559"},
@@ -62,7 +62,8 @@ const config: Config = {
          "inter-tight": ["var(--font-inter-tight)", ...fontFamily.sans],
       },
       backgroundImage: {
-         "header-bg": "linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0) 100%)",
+         "header-bg":
+            "linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0) 100%)",
          "black-primary":
             "linear-gradient(266deg, rgba(128, 80, 242, 0.30) 0%, rgba(24.10, 0, 81.34, 0.30) 100%)",
          "amber-primary": "linear-gradient(166deg, #CBB5FF 0%, #8050F2 100%)",

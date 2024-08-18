@@ -10,7 +10,7 @@ function TextField(props: TextFieldProps) {
          <input
             {...rest}
             type={type || "text"}
-            className={`w-full min-h-[52px] bg-transparent lg:px-6 md:px-5 px-4 lg:py-3 md:py-2.5 py-2 text-content-text placeholder: rounded border border-[#E7E6E6] group hover:border-accent focus:ring-1 ring-primary-300/50 ${className}`}
+            className={`w-full min-h-[52px] bg-transparent px-5 py-3.5 text-lg font-light font-futura-lt placeholder:text-white rounded-full border border-white/50 hover:border-primary-500/60 duration-300 outline-none focus:ring-2 ring-primary-500/40 ${className}`}
          />
       </label>
    );
