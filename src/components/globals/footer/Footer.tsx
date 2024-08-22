@@ -52,7 +52,7 @@ const footerLink = [
 
 function Footer() {
    return (
-      <footer className="pt-5 pb-10">
+      <footer className="pt-5 pb-10 relative z-10">
          <div className="container">
             <div className="grid grid-cols-4 gap-7">
                <div className="flex flex-col justify-between gap-5">
