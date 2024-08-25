@@ -52,9 +52,30 @@ const footerLink = [
 
 function Footer() {
    return (
-      <footer className="pt-5 pb-10 relative z-10">
+      <footer className="pt-20 pb-10 relative z-10 overflow-hidden">
+         <div
+            className="absolute inset-0 -z-10"
+            style={{
+               backgroundImage:
+                  "linear-gradient(rgb(128, 80, 242, 80%) 50%, transparent 50%)",
+            }}
+         />
+         <div className="absolute -z-20 -top-[75px] -right-[26%] left-0">
+            <img className="max-h-[720px] w-full" src="/images/Mask group.png" alt="" />
+         </div>
          <div className="container">
-            <div className="grid grid-cols-4 gap-7">
+            <h2 className="text-12xl font-semibold font-tt-hoves text-center mb-5">
+               Start your process discovery easily
+            </h2>
+            <p className="text-6xl text-center font-dm-sans mb-10">
+               It all begins with a free account
+            </p>
+            <div className="flex justify-center pb-[200px]">
+               <Button className="bg-white text-primary-500 hover:text-white hover:bg-primary-300">
+                  Start for free
+               </Button>
+            </div>
+            <div className="grid grid-cols-4 gap-7 pt-5">
                <div className="flex flex-col justify-between gap-5">
                   <Link href="/">
                      <img src="/images/Group 1.svg" alt="" />

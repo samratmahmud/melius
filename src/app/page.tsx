@@ -5,7 +5,6 @@ import Dashboard from "./home/Dashboard";
 import Pricing from "./home/Pricing/Pricing";
 import Datepicker from "./home/Datepicker";
 import Discovary from "./home/Discovary";
-import Account from "./home/Account";
 
 function page() {
    return (
@@ -16,7 +15,6 @@ function page() {
          <Pricing />
          <Datepicker />
          <Discovary />
-         <Account />
       </main>
    );
 }

@@ -26,7 +26,7 @@ function Navbar() {
                <Link href="/">
                   <img src="/images/logo.svg" alt="" />
                </Link>
-               <div className="flex items-center gap-5">
+               <div className="flex items-center xl:gap-5 gap-3">
                   {navLink.map(({name, href}, index) => (
                      <Link
                         key={index}
@@ -37,7 +37,7 @@ function Navbar() {
                      </Link>
                   ))}
                </div>
-               <div className="flex items-center gap-[30px]">
+               <div className="flex items-center xl:gap-[30px] gap-5">
                   <Button color="gray" size="small" variant="outlined">
                      Sign in
                   </Button>
