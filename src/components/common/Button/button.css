@@ -1,18 +1,18 @@
 @tailwind components;
 
 .button-wrapper {
-   @apply flex items-center justify-center gap-4 rounded-full box-border duration-300 focus:ring-[3px] hover:no-underline outline-none;
+   @apply flex items-center justify-center gap-4 rounded-full box-border duration-300 focus:ring-[3px] hover:no-underline outline-none tracking-[0.05em];
 }
 
 /* Sizes */
 .button-wrapper-small {
-   @apply font-bold leading-[1em] p-3 px-6 min-h-[42px] xl:min-w-[166px];
+   @apply font-bold leading-[1em] lg:py-3 py-2 px-6 lg:min-h-[42px] min-h-[36px];
 }
 .button-wrapper-normal {
-   @apply font-bold font-tt-hoves py-4 px-8 leading-[1em] min-h-[52px] lg:min-w-[264px];
+   @apply font-bold font-tt-hoves lg:py-4 py-3 lg:px-8 px-7 leading-[1em] lg:min-h-[52px] min-h-[44px];
 }
 .button-wrapper-large {
-   @apply font-bold leading-[1em] py-6 px-10 min-h-[68px] lg:min-w-[264px];
+   @apply font-bold leading-[1em] lg:py-6 md:py-4 py-3.5 lg:px-10 px-8 lg:min-h-[68px] md:min-h-[60px] min-h-[52px];
 }
 .button-wrapper-xl-large {
 }
@@ -22,7 +22,7 @@
    @apply bg-primary-500 text-white border border-primary-500 hover:bg-transparent hover:text-primary-500 ring-primary-500/60;
 }
 .button-wrapper-primary-outlined {
-   @apply bg-transparent text-white border border-primary-500 hover:bg-primary-500 focus:bg-amber-800 ring-primary-500/40;
+   @apply bg-transparent text-white border border-primary-500 hover:bg-primary-500 focus:bg-amber-800 ring-primary-500/60;
 }
 .button-wrapper-primary-text {
 }

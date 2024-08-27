@@ -12,9 +12,9 @@ function page() {
          <Header />
          <Support />
          <Dashboard />
-         <Pricing />
-         <Datepicker />
-         <Discovary />
+         {/* <Pricing /> */}
+         {/* <Datepicker /> */}
+         {/* <Discovary /> */}
       </main>
    );
 }

@@ -60,7 +60,7 @@ function Footer() {
                   "linear-gradient(rgb(128, 80, 242, 80%) 50%, transparent 50%)",
             }}
          />
-         <div className="absolute -z-20 -top-[75px] -right-[26%] left-0">
+         <div className="absolute -z-20 xl:-top-[75px] lg:-top-14 -top-10 -right-[26%] left-0 hidden">
             <img className="max-h-[720px] w-full" src="/images/Mask group.png" alt="" />
          </div>
          <div className="container">
@@ -75,7 +75,7 @@ function Footer() {
                   Start for free
                </Button>
             </div>
-            <div className="grid grid-cols-4 gap-7 pt-5">
+            <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:gap-7 gap-4 gap-y-10 pt-5">
                <div className="flex flex-col justify-between gap-5">
                   <Link href="/">
                      <img src="/images/Group 1.svg" alt="" />
@@ -85,6 +85,7 @@ function Footer() {
                         <Link
                            href={href}
                            key={index}
+                           target="_blank"
                            className="w-10 h-10 rounded-full bg-white flex items-center justify-center p-2 hover:bg-primary-500 duration-300 group"
                         >
                            <span className="text-3xl text-black group-hover:text-white duration-200">
@@ -94,11 +95,12 @@ function Footer() {
                      ))}
                   </div>
                </div>
-               <div className=" flex flex-col gap-[22px]">
+               <div className="flex flex-col gap-[22px]">
                   {footerLink.map(({name, url}, index) => (
                      <Link
                         href={url}
                         key={index}
+                        target="_blank"
                         className="text-2xl leading-[1.1em] font-code-pro-lc hover:no-underline hover:text-primary-500 duration-300"
                      >
                         {name}
@@ -106,7 +108,7 @@ function Footer() {
                   ))}
                </div>
                <div>
-                  <h6 className="text-4xl font-medium font-tt-hoves mb-7">
+                  <h6 className="text-4xl font-medium font-tt-hoves lg:mb-7 mb-5">
                      Get in touch
                   </h6>
                   <div className="flex flex-col gap-3">
@@ -119,7 +121,7 @@ function Footer() {
                   <TextArea placeholder="Message" />
                   <Button
                      variant="outlined"
-                     className="bg-black-primary bg-transparent header-button-blur"
+                     className="bg-black-primary bg-transparent header-button-blur min-w-[none]"
                   >
                      Send message
                   </Button>

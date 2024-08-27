@@ -15,7 +15,7 @@ html {
 }
 
 body {
-   @apply font-dm-sans text-xl text-white font-normal;
+   @apply font-dm-sans lg:text-xl text-[13px] text-white font-normal;
 }
 
 @layer components {
@@ -52,7 +52,77 @@ body {
 /* 
  Mobile Responsiveness
 */
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1280px) {
+   .text-13xl {
+      @apply text-[76px];
+   }
+   .text-12xl {
+      @apply text-[56px];
+   }
+   .text-10xl {
+      @apply text-[44px];
+   }
+   .text-9xl {
+      @apply text-[36px];
+   }
+   .text-6xl {
+      @apply text-[25px];
+   }
+   .text-4xl {
+      @apply text-[22px];
+   }
+}
+@media screen and (max-width: 1020px) {
+   .text-13xl {
+      @apply text-[62px];
+   }
+   .text-12xl {
+      @apply text-[48px];
+   }
+   .text-10xl {
+      @apply text-[36px];
+   }
+   .text-9xl {
+      @apply text-[34px];
+   }
+   .text-6xl {
+      @apply text-[20px];
+   }
+   .text-4xl {
+      @apply text-[20px];
+   }
+}
+@media screen and (max-width: 768px) {
+   .text-13xl {
+      @apply text-[46px];
+   }
+   .text-12xl {
+      @apply text-[38px];
+   }
+   .text-10xl {
+      @apply text-[28px];
+   }
+   .text-9xl {
+      @apply text-[32px];
+   }
+   .text-6xl {
+      @apply text-[16px];
+   }
+   .text-4xl {
+      @apply text-[18px];
+   }
 }
 @media screen and (max-width: 600px) {
+   .text-13xl {
+      @apply text-[32px];
+   }
+   .text-12xl {
+      @apply text-[30px];
+   }
+   .text-10xl {
+      @apply text-[24px];
+   }
+   .text-6xl {
+      @apply text-[12px];
+   }
 }
