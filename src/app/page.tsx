@@ -14,7 +14,7 @@ function page() {
          <Support />
          <Dashboard />
          <Pricing />
-         {/* <Datepicker /> */}
+         <Datepicker />
          {/* <Roadmap /> */}
          <Discovary />
       </main>

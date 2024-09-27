@@ -117,6 +117,9 @@ body {
    .text-2xl {
       @apply text-[14px];
    }
+   .text-lg {
+      @apply text-[12px];
+   }
 }
 @media screen and (max-width: 600px) {
    .text-13xl {

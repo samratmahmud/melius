@@ -37,17 +37,19 @@ function PricingCard(props: PricingCardProps) {
                </b>
                {date && <p className="text-2xl font-futura-lt max-w-12">{date}</p>}
             </div>
-            <p className="font-futura-lt lg:mb-[30px] md:mb-6 mb-5 group-first:text-white/40 group-last:text-white/40">
+            <p className="font-futura-lt leading-[1.43em] lg:mb-[30px] md:mb-6 mb-5 group-first:text-white/40 group-last:text-white/40">
                {describtion}
             </p>
-            <div className="mb-[30px]">
+            <div className="lg:mb-[30px] md:mb-6 mb-5">
                {features.map(({title, content}, index) => (
                   <div key={index}>
-                     <h6 className="font-futura-lt font-medium mb-3">{title}</h6>
+                     <h6 className="font-futura-lt leading-[1.12em] font-medium mb-3">
+                        {title}
+                     </h6>
                      <p className="text-lg font-futura-lt group-first:text-white/40 group-last:text-white/40">
                         {content}
                      </p>
-                     <div className="w-full h-[1px] bg-white/20 my-4" />
+                     <div className="w-full h-[1px] bg-white/20 md:my-4 my-3" />
                   </div>
                ))}
             </div>
