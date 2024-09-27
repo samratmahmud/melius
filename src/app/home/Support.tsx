@@ -69,7 +69,7 @@ function Support() {
                         className="border border-white/20 rounded-xl xl:p-5 p-4"
                      >
                         <Image
-                           className="rounded-xl lg:mb-7 mb-5"
+                           className="rounded-xl lg:mb-7 mb-5 w-full"
                            src={thumbnail}
                            alt=""
                            width={332}

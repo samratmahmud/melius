@@ -1,3 +1,4 @@
+import Discovary from "@/app/home/Discovary";
 import type {Config} from "tailwindcss";
 import {fontFamily} from "tailwindcss/defaultTheme";
 
@@ -68,6 +69,7 @@ const config: Config = {
          "black-primary":
             "linear-gradient(266deg, rgba(128, 80, 242, 0.30) 0%, rgba(24.10, 0, 81.34, 0.30) 100%)",
          "amber-primary": "linear-gradient(166deg, #CBB5FF 0%, #8050F2 100%)",
+         "discovary-bg": "url('/images/Mask group.png')",
       },
       container: {
          center: true,

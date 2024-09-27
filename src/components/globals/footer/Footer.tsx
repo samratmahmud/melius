@@ -52,30 +52,9 @@ const footerLink = [
 
 function Footer() {
    return (
-      <footer className="pt-20 pb-10 relative z-10 overflow-hidden">
-         <div
-            className="absolute inset-0 -z-10"
-            style={{
-               backgroundImage:
-                  "linear-gradient(rgb(128, 80, 242, 80%) 50%, transparent 50%)",
-            }}
-         />
-         <div className="absolute -z-20 xl:-top-[75px] lg:-top-14 -top-10 -right-[26%] left-0 hidden">
-            <img className="max-h-[720px] w-full" src="/images/Mask group.png" alt="" />
-         </div>
+      <footer className="pb-10 relative z-50">
          <div className="container">
-            <h2 className="text-12xl font-semibold font-tt-hoves text-center mb-5">
-               Start your process discovery easily
-            </h2>
-            <p className="text-6xl text-center font-dm-sans mb-10">
-               It all begins with a free account
-            </p>
-            <div className="flex justify-center pb-[200px]">
-               <Button className="bg-white text-primary-500 hover:text-white hover:bg-primary-300">
-                  Start for free
-               </Button>
-            </div>
-            <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:gap-7 gap-4 gap-y-10 pt-5">
+            <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:gap-7 gap-4 gap-y-10 lg:pt-5 md:pt-3">
                <div className="flex flex-col justify-between gap-5">
                   <Link href="/">
                      <img src="/images/Group 1.svg" alt="" />
@@ -95,13 +74,13 @@ function Footer() {
                      ))}
                   </div>
                </div>
-               <div className="flex flex-col gap-[22px]">
+               <div className="flex flex-col md:gap-3.5 gap-2.5">
                   {footerLink.map(({name, url}, index) => (
                      <Link
                         href={url}
                         key={index}
                         target="_blank"
-                        className="text-2xl leading-[1.1em] font-code-pro-lc hover:no-underline hover:text-primary-500 duration-300"
+                        className="text-2xl leading-[1.1em] font-code-pro-lc hover:no-underline hover:text-primary-500 duration-300 py-1"
                      >
                         {name}
                      </Link>
@@ -117,7 +96,7 @@ function Footer() {
                      <TextField placeholder="Email" type="email" />
                   </div>
                </div>
-               <div className="flex flex-col gap-3 mt-14">
+               <div className="flex flex-col gap-3 lg:mt-14 md:mt-11 mt-8">
                   <TextArea placeholder="Message" />
                   <Button
                      variant="outlined"
