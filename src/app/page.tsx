@@ -15,7 +15,7 @@ function page() {
          <Dashboard />
          <Pricing />
          <Datepicker />
-         {/* <Roadmap /> */}
+         <Roadmap />
          <Discovary />
       </main>
    );

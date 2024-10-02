@@ -96,7 +96,7 @@ function Footer() {
                      <TextField placeholder="Email" type="email" />
                   </div>
                </div>
-               <div className="flex flex-col gap-3 lg:mt-14 md:mt-11 mt-8">
+               <div className="flex flex-col gap-3 lg:mt-14 md:mt-10 mt-4">
                   <TextArea placeholder="Message" />
                   <Button
                      variant="outlined"
